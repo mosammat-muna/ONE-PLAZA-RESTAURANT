@@ -1,0 +1,199 @@
+/* General reset and styling for all elements */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Body styling */
+    body {
+      padding-top: 60px;
+    }
+    /* Navbar styling */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: black;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      overflow: hidden;
+    }
+
+    /* Logo within the navbar */
+    nav .logo {
+      position: relative;
+      max-width: 80px;
+    }
+    /* Unordered list for nav items */
+    ul {
+      display: flex;
+      list-style: none;
+      color: #fff;
+      gap: 2rem;
+      position: fixed;
+      right: 0;
+      padding-right: 15px;
+
+    }
+    /* Navbar links styling */
+    nav ul li a {
+      display: inline-block;
+      color: #fff;
+      font-weight: 400;
+      margin-left: 40px;
+      text-decoration: none;
+    }
+    /* Hover effect for nav links */
+    nav a:hover {
+      background-color: rgb(255, 0, 0);
+      border-radius: 16px;
+      padding: 6px 8px 6px 8px;
+      margin: -7px;
+    }
+    /* Grid area for nav */
+    nav {
+      grid-area: nav;
+    }
+    /* Placeholder grid area for future content */
+    .nothing {
+      grid-area: nothing;
+    }
+    /* Main content area styling */
+    main {
+      grid-area: main;
+    }
+
+    /* background */
+    body {
+      background-color: #FEEEDE;
+    }
+
+
+    /* image */
+    img {
+      height: 100%;
+    }
+
+    /* inputs */
+    input {
+      margin-bottom: 10px;
+    }
+    /* form */
+    textarea {
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    /* button */
+    input:first-of-type {
+      margin-top: 35px;
+    }
+    /* message */
+    input,
+    textarea {
+      font-size: 15px;
+      padding: 15px 10px 10px;
+      font-family: 'Roboto', serif;
+      border: 1px solid #cecece;
+      background: #F3F5F6;
+
+      width: 80%;
+      max-width: 600px;
+    }
+
+    /* button */
+    button {
+      font-size: 15px;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      background-color: #94c2da;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 70px;
+      padding-left: 35px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #CBDFE0;
+      -webkit-transition: .5s;
+      transition: .5s;
+      cursor: pointer;
+      width: 30%;
+      color: #fff;
+    }
+    /* hover effect */
+    button:hover {
+      background: #CBDFE0;
+    }
+    /* button styling */
+    .button {
+      display: inline-block;
+      text-align: center;
+      margin-left: 55px;
+    }
+    /* Message display styling*/
+    .message {
+      font-family: 'Roboto', serif;
+      font-size: 1.1em;
+      display: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #2ABCA7;
+      width: 80%;
+      margin: auto;
+      color: #FAFAFA;
+
+    }
+
+    /* Main container styling */
+    .container {
+      height: 550px;
+      width: 992px;
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 90px;
+      bottom: 0;
+      background-color: #fff;
+    }
+    /* Image container styling */
+    .image-container {
+      position: absolute;
+      height: 100%;
+      width: 30%;
+    }
+    /* Text container styling */
+    .text-container {
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      right: 0;
+      margin: auto;
+      margin-left: 0px;
+
+    }
+    /* Title h1 styling */
+    .tittle h1 {
+      text-align: center;
+      padding-top: 0.5%;
+      margin-bottom: 10px;
+      font-weight: 600;
+      position: relative;
+    }
+    /* Decorative line under heading */
+    .tittle h1::after {
+      content: '';
+      background: #86d9dc;
+      width: 100px;
+      height: 5px;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }

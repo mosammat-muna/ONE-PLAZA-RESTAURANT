@@ -1,0 +1,113 @@
+/* Set the background image and styling for the entire HTML document */
+html {
+  background-image: url("pic_home2.jpg"); /* Background image for the page */
+  background-position: center; 
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-attachment: fixed; /* Fix the background image in place during scrolling */
+  filter: brightness(); 
+  height: 100vh; 
+  width: 100vw; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Add padding to the top of the body to accommodate the fixed navbar */
+body {
+  padding-top: 60px;
+}
+
+/* Style the navigation bar */
+nav {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1rem 2rem; 
+  background-color: black; 
+  position: fixed; 
+  top: 0;
+  left: 0; 
+  width: 100%;
+  z-index: 9999; 
+  overflow: hidden; 
+}
+
+/* Style the logo within the navbar */
+nav .logo {
+  position: relative;
+  max-width: 80px;
+}
+
+/* Style the unordered list inside the navbar */
+ul {
+  display: flex; 
+  list-style: none; 
+  color: #fff; 
+  gap: 2rem; /* Add space between list items */
+  position: fixed; 
+  right: 0; /* Align the list to the right side of the page */
+  padding-right: 15px; 
+}
+
+/* Style the links inside the list items in the navbar */
+nav ul li a {
+  display: inline-block; 
+  color: #fff; 
+  font-weight: 400; 
+  margin-left: 40px;
+  text-decoration: none; 
+}
+
+/* Add hover effect to the navbar links */
+nav a:hover {
+  background-color: rgb(255, 0, 0); /* Change background color on hover */
+  border-radius: 16px; /* Add rounded corners to the background */
+  padding: 6px 8px 6px 8px; /* Add padding inside the background */
+  margin: -7px; /* Adjust margin to prevent layout shift */
+}
+
+/* Assign grid area for navigation */
+nav {
+  grid-area: nav;
+}
+
+/* Define an empty grid area (placeholder) */
+.nothing {
+  grid-area: nothing;
+}
+
+/* Assign grid area for the main content */
+main {
+  grid-area: main;
+}
+
+/* Style the container for centered text */
+.container {
+  text-align: center; 
+  color: white; 
+}
+
+/* Style the main heading */
+h1 {
+  text-transform: uppercase; 
+  letter-spacing: 5px; 
+  font-size: 4rem;
+  font-weight: 400; 
+}
+
+/* Style the home button */
+.home-button {
+  color: white; 
+  text-decoration: none; 
+  border: 2px white solid; 
+  padding: 10px 15px; 
+}
+
+/* Add hover and focus effects to the home button */
+.home-button:hover,
+.home-button:focus {
+  background: rgba(243, 230, 1, 0.2); /* Change background on hover/focus */
+  outline: none; /* Remove outline on focus */
+}

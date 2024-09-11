@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata for character encoding, compatibility, and viewport settings -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>One Plaza Reservation</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <!-- Link to external CSS file -->
+  <link href="booking_reservation.css" rel="stylesheet" />
+
+  <!-- Link to external JavaScript file -->
+  <script src="booking_reservation.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <!-- Home icon link -->
+    <a href="index.html"><i class="fa fa-globe" style="font-size:20px"></i></a>
+    <ul class="navigation">
+      <!-- Navigation links -->
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <!-- Shopping cart icon link -->
+      <li><a href="#"><i class="fa fa-shopping-cart" style="font-size:20px"></i></a></li>
+      <li></li> <!-- Empty list items for potential future use -->
+      <li></li>
+    </ul>
+  </nav>
+
+  <!-- Background styling element -->
+  <div class="gray-block"></div>
+
+  <!-- Page title section -->
+  <div class="tittle">
+    <h1>Reservation</h1>
+  </div>
+
+  <!-- Main container for content -->
+  <div class="container">
+    <!-- Image section -->
+    <div class="image-container">
+      <img src="pic_home.jpg" alt="Image of the restaurant or related theme">
+    </div>
+
+    <!-- Form container for reservation inputs -->
+    <div class="text-container">
+      <!-- Input for customer's name -->
+      <input type="text" name="name" placeholder="First and Last Name" /><br />
+
+      <!-- Input for customer's email -->
+      <input type="email" name="email" placeholder="Email" /><br />
+
+      <!-- Input for number of guests -->
+      <input type="number" name="number" placeholder="Number of Guest" min="0" max="100" /><br />
+
+      <!-- Input for booking date and time -->
+      <label for="date">Date and Time of the booking:</label>
+      <input type="datetime-local" placeholder="Date and Time" /><br />
+
+      <!-- Text area for any additional message or special requests -->
+      <textarea type="text" name="message"
+        placeholder="Message(Any question or concerns we should know about)"></textarea><br />
+
+      <!-- Confirmation message  -->
+      <div class="message">Message Sent</div>
+
+      <!-- Submit button for the form -->
+      <div class="button">
+        <button id="submit" type="submit">Send</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

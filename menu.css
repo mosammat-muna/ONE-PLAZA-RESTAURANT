@@ -1,0 +1,182 @@
+/* General reset for margin, padding, box-sizing and set default font  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    padding-top: 60px; 
+    font-family: 'Roboto', serif; 
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 2rem; 
+    background-color: black; 
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 9999; 
+    overflow: hidden; 
+}
+
+/* Unordered list for nav items */
+ul {
+    display: flex; 
+    list-style: none; 
+    color: #fff; 
+    gap: 2rem; 
+    position: fixed; 
+    right: 0; 
+    padding-right: 15px; 
+}
+
+/* Nav link styling */
+nav ul li a {
+    display: inline-block; 
+    color: #fff; 
+    font-weight: 400; 
+    margin-left: 40px; 
+    text-decoration: none; 
+}
+
+/* Hover effect for nav links */
+nav a:hover {
+    background-color: rgb(255, 0, 0); /* Changes background color on hover */
+    border-radius: 16px; /* Adds rounded corners on hover */
+    padding: 6px 8px; /* Adds padding inside the link on hover */
+    margin: -7px; /* Adjusts margin to keep spacing consistent */
+}
+
+/* Grid area for nav */
+nav {
+    grid-area: nav; 
+}
+
+/* Placeholder grid area for future content */
+.nothing {
+    grid-area: nothing; 
+}
+
+/* Main content area styling */
+main {
+    grid-area: main; 
+}
+
+/* Menu section styling */
+#menu {
+    padding: 0; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    grid-gap: 20px 40px; 
+    background: rgb(245, 242, 242); 
+    min-height: 100vh; 
+    margin: 0; 
+    box-sizing: border-box; 
+    
+}
+
+/* Styling for menu section heading */
+.heading {
+    background: rgb(245, 242, 242); 
+    color: #373333; 
+    margin-bottom: 0px; 
+    grid-column: 1/-1; 
+    text-align: center; 
+}
+
+/* Menu card styling */
+.card {
+    display: grid; 
+    position: relative; 
+    grid-template-rows: auto 1fr; 
+    border-radius: 15px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* Image styling for menu card */
+.card img {
+    position: relative; 
+    width: 100%; 
+    height: 50vh; 
+    object-fit: cover; 
+    object-position: center;
+}
+
+/* Styling for card details */
+.details {
+    padding: 10px 10px; 
+    display: grid; 
+    grid-template-rows: auto 1fr 50px; 
+    grid-row-gap: 15px; 
+}
+
+/* Styling for sub-details inside card */
+.details-sub {
+    display: grid; /* Uses grid layout */
+    grid-template-columns: auto auto; /* Defines two columns */
+}
+
+/* Heading inside sub-details */
+.details-sub h5 {
+    font-weight: 600; 
+    font-size: 18px;
+}
+
+/* Price text styling */
+.price {
+    text-align: right; 
+}
+
+/* Paragraph styling inside details */
+.details p {
+    color: #6f6f6f; 
+    font-size: 15px;
+    line-height: 25px; 
+    align-self: stretch; 
+}
+
+/* Button styling */
+button {
+    background-color: rgb(22, 22, 94); 
+    color: white;
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: 600; 
+    border-radius: 7px; 
+    width: 180px; 
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: rgb(94, 158, 61); 
+}
+
+/* Heading styling */
+.heading h1 {
+    text-align: center; 
+    padding-top: 2%;
+    margin-bottom: 10px; 
+    font-weight: 600; 
+    position: relative; 
+}
+
+/* Decorative line under heading */
+.heading h1::after {
+    content: ''; /* Adds empty content for decorative line */
+    background: #86d9dc; /* Sets background color for line */
+    width: 100px; 
+    height: 5px; 
+    position: absolute; 
+    bottom: -5px;
+    left: 50%; /* Centers line horizontally */
+    transform: translateX(-50%); /* Centers line by translating left */
+}

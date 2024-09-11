@@ -1,0 +1,165 @@
+/* General reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body padding to avoid content overlap with fixed navbar */
+body {
+  padding-top: 60px;
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* Navbar logo styling */
+nav .logo {
+  position: relative;
+  max-width: 80px;
+}
+
+/* Navbar menu list styling */
+ul {
+  display: flex;
+  list-style: none;
+  color: #fff;
+  gap: 2rem;
+  position: fixed;
+  right: 0;
+  padding-right: 15px;
+}
+
+/* Navbar links styling */
+nav ul li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+/* Navbar links hover effect */
+nav a:hover {
+  background-color: rgb(255, 0, 0);
+  border-radius: 16px;
+  padding: 6px 8px 6px 8px;
+  margin: -7px;
+}
+
+/* Grid area for navbar */
+nav {
+  grid-area: nav;
+}
+
+/* Grid area for an empty section */
+.nothing {
+  grid-area: nothing;
+}
+
+/* Grid area for main content */
+main {
+  grid-area: main;
+}
+
+/* Container for centralizing content */
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0px 8%;
+}
+
+/* Heading inside container */
+.container h1 {
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 10px;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Paragraph inside container */
+.pa p {
+  text-align: center;
+  padding-top: 2%;
+  margin-bottom: 10px;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Decorative underline for heading */
+.container h1::after {
+  content: '';
+  background: #86d9dc;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Row layout using grid */
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+/* Styling for service items */
+.service {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
+}
+
+/* Icon inside service box */
+.service i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #303ef7;
+}
+
+/* Heading inside service box */
+.service h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Hover effect for service box */
+.service:hover {
+  background: #bcbfe4;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Hover effect for service icon */
+.service:hover i {
+  color: #fff;
+}
+
+/* Image inside service box */
+.service img {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center;
+}
